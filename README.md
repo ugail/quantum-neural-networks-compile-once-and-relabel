@@ -1,11 +1,17 @@
 
-> ** Compile-Once-and-Relabel Solution for Topology-Dependent Structural Asymmetry in Compiled Equivariant Quantum Neural Networks &mdash; **
-> Hassan Ugail and Newton Howard.
+## Compile-Once-and-Relabel Solution for Topology-Dependent Structural Asymmetry in Compiled Equivariant Quantum Neural Networks
+## by Hassan Ugail and Newton Howard.
 
 ---
 
 
 Equivariant quantum neural networks are designed so that their outputs respect symmetries in the input data. In nearly all published work this property is verified only at the level of the ideal circuit, before any compilation step. We show that compilation can quietly break the property at the structural level. Two algebraically equivalent inputs related by a symmetry of the data, compiled against the same hardware target with the same transpiler settings, can yield circuits that differ substantially in two-qubit gate count, scheduled depth, and physical-qubit layout. On IBM Heron's Fez at twelve qubits this divergence reaches 28% in CZ count between a graph and a random vertex permutation of it, with a mean of 19.2% across fifty seeds. Because two-qubit gate count is the dominant determinant of execution time and noise susceptibility on near-term superconducting hardware, an asymmetry of this size is not a cosmetic artefact.
+
+
+
+<img width="890" height="614" alt="Figure2" src="https://github.com/user-attachments/assets/46051a8d-a850-4024-aa87-395d7675dd54" />
+
+
 
 The asymmetry is not generic. We show that it arises only for ansätze in which the symmetry action changes the gate-topology that the compiler sees, and is provably absent for ansätze in which the symmetry action changes only numerical rotation angles inside an otherwise fixed gate structure. The two classes are called **topology-input** and **parameter-input** respectively, and the same symmetry group can appear in either class depending on the architecture. For the parameter-input case Theorem 1 of the paper guarantees zero CZ-count asymmetry under any transpiler whose CZ-count-affecting passes depend only on the gate-topology, and we verify this empirically across three published architectures (Dong, West, Chang). For the topology-input case (the Skolik $S_n$-equivariant ansatz) the paper proposes a deployment pattern called **compile-once-and-relabel**, in which a single representative of the symmetry orbit is compiled and every other orbit element is handled by a classical relabelling of inputs and measurement outcomes at the interface. The structural asymmetry then vanishes by construction, and the per-orbit-element compilation cost drops from linear to constant.
 
