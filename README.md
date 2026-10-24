@@ -1,7 +1,8 @@
 # Compile-Once-and-Relabel
 
-> **Topology-Dependent Compilation Asymmetry in Equivariant Quantum Neural Networks: A Compile-Once-and-Relabel Solution**
-> Hassan Ugail and Newton Howard.
+> **TTopology-Dependent Compilation Asymmetry in Equivariant Quantum Neural Networks: A Compile-Once-and-Relabel Solution  H. Ugail and N. Howard, 2026, Quantum Sci. Technol. https://doi.org/10.1088/2058-9565/aeb8ef
+
+
 
 ---
 
@@ -121,7 +122,11 @@ No IBM Quantum account is required to run this notebook; the fake-provider model
 
 ## Citation
 
-If you use this code or build on these results, please cite the paper (Ugail H and Howard N, *Topology-Dependent Compilation Asymmetry in Equivariant Quantum Neural Networks: A Compile-Once-and-Relabel Solution*; full bibliographic details will be added upon publication).
+If you use this code or build on these results, please cite the paper:
+
+Topology-Dependent Compilation Asymmetry in Equivariant Quantum Neural Networks: A Compile-Once-and-Relabel Solution, H. Ugail and N. Howard, 2026, Quantum Sci. Technol. https://doi.org/10.1088/2058-9565/aeb8ef
+
+
 
 ---
 
